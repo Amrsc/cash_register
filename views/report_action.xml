@@ -1,0 +1,11 @@
+<odoo>
+    <report
+        id="action_report_cash_register"
+        model="cash.register"
+        string="Registre de caisse"
+        report_type="qweb-pdf"
+        name="cash_register.report_cash_register_template"
+        file="cash_register.report_cash_register_template"
+        print_report_name="'Cash_Register_Report_' + (object.name or '').replace('/','_')"
+    />
+</odoo>
